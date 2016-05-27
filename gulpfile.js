@@ -2,9 +2,15 @@ var gulp = require('gulp');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
 var path = require('path');
+var rename = require("gulp-rename");
 
-var icons = ['printer', 'close'];
+var icons = ['printer', 'close', 'lock', 'account', 'email', 'phone', 'arrow-right', 'checkbox-marked-circle',
+    'alert-circle', 'dots-vertical', 'plus', 'check', 'library', 'tablet-android', 'account-box-outline', 'water-pump',
+    'swap-horizontal', 'clipboard-account', 'database', 'settings', 'export', 'clipboard-text', 'book', 'tree', 'chart-line',
+    'book-multiple', 'web', 'chart-timeline', 'more'];
+
 var svgFolder = 'icons/svg/';
+
 function iconSrc(iconName) {
     return svgFolder + iconName + '.svg';
 }
@@ -24,7 +30,11 @@ gulp.task('svgstoreall', function () {
         //         }]
         //     }
         // }))
-        .pipe(svgstore())
+        .pipe(svgstore({ inlineSvg: true }))
+        .pipe(rename({
+            basename: "mdi-all",
+            extname: ".svg"
+        }))
         .pipe(gulp.dest('test/dest'));
 });
 
@@ -48,5 +58,10 @@ gulp.task('svgstore', function () {
             }
         }))
         .pipe(svgstore({ inlineSvg: true }))
-        .pipe(gulp.dest('test/dest'));
+        .pipe(rename({
+            basename: "mdi",
+            extname: ".svg"
+        }))
+        .pipe(gulp.dest('C:/tfs/Browser CIS/NYCDEP_BrowserCIS/NYC.DEP.BCIS.WebApp'));
+    //.pipe(gulp.dest('test/dest'));
 });
