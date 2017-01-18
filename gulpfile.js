@@ -6,10 +6,12 @@ var rename = require("gulp-rename");
 var cheerio = require('gulp-cheerio');
 
 var icons = ['account', 'account-box-outline', 'account-circle', 'account-search', 'alert-circle', 'arrow-right',
-    'book', 'book-multiple', 'chart-line', 'chart-pie', 'chart-timeline', 'check', 'check-circle', 'checkbox-marked-circle',
-    'clipboard-account', 'clipboard-text', 'close', 'close-circle', 'content-save', 'database', 'delete', 'details', 'document', 'dots-vertical', 'download',
-    'email', 'export','file-document-box', 'information', 'library', 'lock', 'logout', 'magnify', 'more', 'pencil', 'phone', 'plus', 'printer',
-    'settings', 'speedometer', 'swap-horizontal', 'table', 'table-edit', 'tablet-android', 'tree', 'water-pump', 'web'];
+    'book', 'book-multiple', 'chart-line', 'chart-pie', 'chart-timeline', 'check', 'check-circle', 'checkbox-marked-circle', 
+    'chevron-down','chevron-right', 'clipboard-account', 'clipboard-text', 'close', 'close-circle', 'content-save', 
+    'database', 'delete', 'details', 'document', 'dots-vertical', 'download', 'email', 'export','file-document-box', 'home', 
+    'information', 'information-outline', 'library', 'lock', 'logout', 'magnify', 'more', 'pencil', 'phone', 
+    'plus', 'printer', 'settings', 'speedometer', 'swap-horizontal', 'table', 'table-edit', 'tablet-android', 'tree', 
+    'water-pump', 'web'];
 
 var svgFolder = 'icons/svg/';
 
