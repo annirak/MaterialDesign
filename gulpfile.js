@@ -7,10 +7,10 @@ var cheerio = require('gulp-cheerio');
 
 var icons = ['account', 'account-box-outline', 'account-circle', 'account-search', 'alert-circle', 'arrow-right',
     'book', 'book-multiple', 'calendar-clock', 'cash-usd', 'chart-line', 'chart-pie', 'chart-timeline', 'check', 'check-circle', 
-    'checkbox-marked-circle', 'chevron-down','chevron-right', 'clipboard-account', 'clipboard-text', 'close', 'close-circle', 
-    'content-save', 'database', 'delete', 'details', 'document', 'dots-vertical', 'download', 'email', 'export', 
-    'file', 'file-document-box', 'home', 'information', 'information-outline', 'library', 'lock', 'lock-unlocked', 'logout', 
-    'magnify', 'more', 'pencil', 'phone', 'plus', 'printer', 'settings', 'speedometer', 'swap-horizontal', 
+    'checkbox-marked-circle', 'chevron-down', 'chevron-left', 'chevron-right', 'clipboard-account', 'clipboard-text', 
+    'close', 'close-circle', 'comment-alert', 'content-save', 'database', 'delete', 'details', 'document', 'dots-vertical', 'download', 
+    'email', 'export', 'file', 'file-check', 'file-document-box', 'home', 'information', 'information-outline', 'library', 'lock', 
+    'lock-unlocked', 'logout', 'magnify', 'more', 'pencil', 'phone', 'plus', 'printer', 'settings', 'speedometer', 'swap-horizontal', 
     'table', 'table-edit', 'tablet-android', 'tree', 'water-pump', 'web'];
 
 var svgFolder = 'icons/svg/';
@@ -49,7 +49,8 @@ gulp.task('svgstore', function () {
     }, this);
     //var dest = 'test/dest';
     //var dest='C:/tfs/Browser CIS/NYCDEP_BrowserCIS/NYC.DEP.BCIS.WebApp';
-    var dest='C:/tfs/DEP/BrowserCIS/Main/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
+    //var dest='C:/tfs/DEP/BrowserCIS/Main/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
+    var dest = 'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
     return gulp
         .src(srcFiles)
         .pipe(svgstore({ inlineSvg: true }))
