@@ -7,7 +7,7 @@ var cheerio = require('gulp-cheerio');
 
 var icons = ['account', 'account-box-outline', 'account-circle', 'account-search', 'alert-circle', 'arrow-right',
     'book', 'book-multiple', 'calendar-clock', 'cash-usd', 'chart-line', 'chart-pie', 'chart-timeline', 'check', 'check-circle', 
-    'checkbox-marked-circle', 'chevron-down', 'chevron-left', 'chevron-right', 'clipboard-account', 'clipboard-text', 
+    'checkbox-marked-circle', 'chevron-down', 'chevron-left', 'chevron-right', 'chevron-up', 'clipboard-account', 'clipboard-text', 
     'close', 'close-circle', 'comment-alert', 'content-save', 'database', 'delete', 'details', 'document', 'dots-vertical', 'download', 
     'email', 'export', 'file', 'file-check', 'file-document-box', 'home', 'information', 'information-outline', 'library', 'lock', 
     'lock-unlocked', 'logout', 'magnify', 'more', 'pencil', 'phone', 'plus', 'printer', 'settings', 'speedometer', 'swap-horizontal', 
