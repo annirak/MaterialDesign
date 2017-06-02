@@ -12,7 +12,7 @@ var icons = ['account', 'account-alert', 'account-card-details', 'account-box-ou
     'check-circle', 'checkbox-marked-circle', 'chevron-down', 'chevron-left', 'chevron-right', 'chevron-up', 'clipboard-account', 'clipboard-text', 'clock-alert', 
     'close', 'close-circle', 'comment-alert', 'content-save', 'credit-card', 
     'database', 'delete', 'desktop-classic', 'details', 'document', 'dots-vertical', 'download', 'email', 'emoticon-cool', 'export', 
-    'file', 'file-account', 'file-chart', 'file-check', 'file-document-box', 'folder-account', 'gauge', 'home', 'information', 'information-outline', 
+    'file', 'file-account', 'file-chart', 'file-check', 'file-document-box', 'folder-account', 'gauge', 'history', 'home', 'information', 'information-outline', 
     'library', 'link', 'lock', 'lock-unlocked', 'logout', 'magnify', 'more', 'note', 'pencil', 'phone', 'plus', 'printer', 
     'settings', 'sort-ascending', 'sort-descending', 'speedometer', 'swap-horizontal', 
     'table', 'table-edit', 'table-row-plus-after', 'tablet-android', 'ticket-account', 'transfer', 'tree', 'undo', 'update', 'view-list', 'water-pump', 'web'];
@@ -61,6 +61,9 @@ gulp.task('svgstore', function () {
         .pipe(cheerio({
             run: function ($) {
                 $('[fill]').removeAttr('fill');
+                $('[stroke-width]').removeAttr('stroke-width');
+                $('[fill-opacity]').removeAttr('fill-opacity');
+                $('[stroke-linejoin]').removeAttr('stroke-linejoin');
                 // let x = 0;
                 // let y = 0;
                 // $('symbol').each(function () {
