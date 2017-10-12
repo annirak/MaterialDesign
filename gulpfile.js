@@ -6,16 +6,19 @@ var rename = require("gulp-rename");
 var cheerio = require('gulp-cheerio');
 
 var icons = ['account', 'account-alert', 'account-card-details', 'account-box-outline', 'account-circle', 'account-multiple', 'account-multiple-outline',
-    'account-multiple-plus', 'account-outline', 'account-plus', 'account-search', 'account-settings-variant', 'alert', 'alert-circle', 'arrow-down', 'arrow-left', 'arrow-right', 'assistant', 
+    'account-multiple-plus', 'account-outline', 'account-plus', 'account-search', 'account-settings-variant', 'alert', 'alert-circle', 
+    'arrow-down', 'arrow-left', 'arrow-right', 'assistant', 
     'basket-unfill', 'barcode-scan', 'bell', 'book', 'book-multiple', 'book-open', 'book-open-page-variant', 
-    'calculator', 'calendar', 'calendar-clock', 'calendar-multiple', 'cash', 'cash-100', 'cash-multiple', 'cash-usd', 'chart-areaspline', 'chart-line', 'chart-pie', 'chart-timeline', 'check', 
-    'check-circle', 'checkbox-marked-circle', 'chevron-down', 'chevron-left', 'chevron-right', 'chevron-up', 'clipboard-account', 'clipboard-text', 'clock-alert', 
+    'cancel', 'calculator', 'calendar', 'calendar-clock', 'calendar-multiple', 'cash', 'cash-100', 'cash-multiple', 'cash-usd', 
+    'chart-areaspline', 'chart-line', 'chart-pie', 'chart-timeline', 'check', 'check-circle', 'checkbox-marked-circle', 'checkbox-multiple-marked-outline',
+    'chevron-down', 'chevron-left', 'chevron-right', 'chevron-up', 'clipboard-account', 'clipboard-text', 'clock-alert', 
     'close', 'close-circle', 'comment-alert', 'content-save', 'credit-card', 
     'database', 'delete', 'delete-forever', 'desktop-classic', 'details', 'document', 'dots-vertical', 'download', 'email', 'emoticon-cool', 'export', 
-    'file', 'file-account', 'file-chart', 'file-check', 'file-document-box', 'folder-account', 'gauge', 'history', 'home', 'information', 'information-outline', 
-    'library', 'link', 'lock', 'lock-unlocked', 'logout', 'magnify', 'map-marker', 'more', 'note', 'pencil', 'phone', 'plus', 'printer', 
-    'remote', 'settings', 'sort-ascending', 'sort-descending', 'speedometer', 'swap-horizontal', 
-    'table', 'table-edit', 'table-row-plus-after', 'tablet-android', 'ticket-account', 'transfer', 'tree', 'undo', 'update', 'view-list', 'water-pump', 'web'];
+    'file', 'file-account', 'file-chart', 'file-check', 'file-document-box', 'folder-account', 'gauge', 'history', 'home', 
+    'information', 'information-outline', 'library', 'link', 'lock', 'lock-unlocked', 'logout', 'magnify', 'map-marker', 'more', 
+    'note', 'pencil', 'phone', 'plus', 'printer', 'remote', 'settings', 'sort-ascending', 'sort-descending', 'speedometer', 'swap-horizontal', 
+    'table', 'table-edit', 'table-row-plus-after', 'tablet-android', 'ticket-account', 'transfer', 'tree', 'undo', 'update', 'view-list', 
+    'water-pump', 'web'];
 
 var svgFolder = 'icons/svg/';
 
