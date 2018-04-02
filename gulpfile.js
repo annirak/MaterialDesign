@@ -121,6 +121,7 @@ var icons = [
 
 let appsDirIcons = [
     'account-box-outline',
+    'alert-box',
     'book',
     'book-multiple',
     'calendar',
@@ -134,15 +135,20 @@ let appsDirIcons = [
     'database',
     'domain',
     'export',
+    'file-document-box',
     'gauge',
+    'google-analytics',
     'lan',
     'library',
+    'magnify',
     'more',
     'settings',
     'swap-horizontal',
     'table',
     'tablet-android',
     'tree',
+    'truck',
+    'water',
     'water-pump',
     'web'
 ];
@@ -155,7 +161,8 @@ function iconSrc(iconName) {
 
 gulp.task('svgstoreall', function() {
     var srcFiles = iconSrc('*');
-    return (gulp
+    return (
+        gulp
             .src(srcFiles)
             // .pipe(svgmin(function (file) {
             //     var prefix = path.basename(file.relative, path.extname(file.relative));
@@ -175,22 +182,23 @@ gulp.task('svgstoreall', function() {
                     extname: '.svg'
                 })
             )
-            .pipe(gulp.dest('test/dest')) );
+            .pipe(gulp.dest('test/dest'))
+    );
 });
 
 gulp.task('svgstore', function() {
     var srcFiles = [];
-    appsDirIcons.forEach(function(icon) {
-        srcFiles.push(iconSrc(icon));
-    }, this);
-    //var dest = 'test/dest';
-    //var dest='C:/tfs/Browser CIS/NYCDEP_BrowserCIS/NYC.DEP.BCIS.WebApp';
-    //var dest='C:/tfs/DEP/BrowserCIS/Main/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
+
+    //  var dest =
+    //      'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
+    // icons.forEach(icon => srcFiles.push(iconSrc(icon)));
+
     var dest =
         'C:/Users/kmireles.DS/Documents/visual studio 2015/Projects/AppsDir/AppsDir/images';
-    // var dest =
-    //     'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
-    return (gulp
+    appsDirIcons.forEach(icon => srcFiles.push(iconSrc(icon)));
+
+    return (
+        gulp
             .src(srcFiles)
             .pipe(svgstore({ inlineSvg: true }))
             .pipe(
@@ -240,5 +248,6 @@ gulp.task('svgstore', function() {
             },
             parserOptions: { xmlMode: true }
         }))*/
-            .pipe(gulp.dest(dest)) );
+            .pipe(gulp.dest(dest))
+    );
 });
