@@ -59,7 +59,9 @@ var icons = [
     'clock-alert',
     'close',
     'close-circle',
+    'coins',
     'comment-alert',
+    'comment-question',
     'content-save',
     'credit-card',
     'database',
@@ -78,6 +80,7 @@ var icons = [
     'file-chart',
     'file-check',
     'file-document-box',
+    'filter-variant',
     'folder-account',
     'format-list-bulleted',
     'gauge',
@@ -121,26 +124,30 @@ var icons = [
 
 let appsDirIcons = [
     'account-box-outline',
+    'account-switch',
     'alert-box',
     'book',
     'book-multiple',
     'calendar',
-    'card-icon',
+    //'card-icon',
     'chart-line',
     'chart-timeline',
-    'cisco-webex',
     'clipboard-account',
     'clipboard-text',
     'credit-card',
     'database',
     'domain',
     'export',
+    'file-check',
     'file-document-box',
     'gauge',
     'google-analytics',
+    'google-maps',
+    'information-outline',
     'lan',
     'library',
     'magnify',
+    'map-marker',
     'more',
     'settings',
     'swap-horizontal',
@@ -189,13 +196,13 @@ gulp.task('svgstoreall', function() {
 gulp.task('svgstore', function() {
     var srcFiles = [];
 
-    //  var dest =
-    //      'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
-    // icons.forEach(icon => srcFiles.push(iconSrc(icon)));
-
     var dest =
-        'C:/Users/kmireles.DS/Documents/visual studio 2015/Projects/AppsDir/AppsDir/images';
-    appsDirIcons.forEach(icon => srcFiles.push(iconSrc(icon)));
+        'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
+    icons.forEach(icon => srcFiles.push(iconSrc(icon)));
+
+    // var dest =
+    //     'C:/Users/kmireles.DS/Documents/visual studio 2015/Projects/AppsDir/AppsDir/images';
+    // appsDirIcons.forEach(icon => srcFiles.push(iconSrc(icon)));
 
     return (
         gulp
