@@ -1,10 +1,10 @@
 # Material Design
 
-This repo contains helpful design resources for Google's Material Design.
+This repo contains all the planning for current and work-in-progress Material Design Icons.
 
 [Getting Started for Bootstrap](http://materialdesignicons.com/bootstrap) - [Getting Started for Other Platforms](http://materialdesignicons.com/getting-started)
 
-[![npm](https://img.shields.io/npm/v/mdi.svg)](https://www.npmjs.com/package/mdi) [![npm](https://img.shields.io/bower/v/mdi.svg)](https://www.npmjs.com/package/mdi) [![GitHub issues](https://img.shields.io/github/issues/Templarian/MaterialDesign.svg)](https://github.com/Templarian/MaterialDesign/issues) [![npm](https://img.shields.io/npm/dm/mdi.svg)](https://github.com/Templarian/MaterialDesign-Webfont)
+[![npm](https://img.shields.io/npm/v/@mdi/font.svg)](https://www.npmjs.com/package/@mdi/svg) [![npm](https://img.shields.io/bower/v/mdi.svg)](https://www.npmjs.com/package/@mdi/svg) [![GitHub issues](https://img.shields.io/github/issues/Templarian/MaterialDesign.svg)](https://github.com/Templarian/MaterialDesign/issues) [![npm](https://img.shields.io/npm/dm/@mdi/font.svg)](https://github.com/Templarian/MaterialDesign-Webfont) + (renamed `mdi` [![npm](https://img.shields.io/npm/dm/mdi.svg)](https://github.com/Templarian/MaterialDesign-Webfont))
 
 <sub>Download stats above only for NPM</sub>
 
@@ -12,10 +12,12 @@ This repo contains helpful design resources for Google's Material Design.
 
 View at [Material Design Icons](http://materialdesignicons.com/). This repo also contains converted icons from [Google's official icon set](https://github.com/google/material-design-icons).
 
-```
-npm install mdi
-bower install mdi
-```
+|                 | NPM                   | Bower                   | Dist Repo |
+|-----------------|-----------------------|-------------------------|-----------|
+| Webfont / SCSS  | `npm install @mdi/font`     |`bower install mdi`      | [MaterialDesign-Webfont](https://github.com/Templarian/MaterialDesign-Webfont) |
+| JavaScript / TypeScript  | `npm install @mdi/js`     | n/a      | [MaterialDesign-JS](https://github.com/Templarian/MaterialDesign-JS) |
+| ReactJS  | `npm install @mdi/react`     | n/a      | [MaterialDesign-React](https://github.com/Templarian/MaterialDesign-React) |
+| SVG / Meta.json | `npm install @mdi/svg` | `bower install mdi-svg` | [MaterialDesign-SVG](https://github.com/Templarian/MaterialDesign-SVG)     |
 
 [![Icons](http://i.imgur.com/zKuXEkR.png)](https://materialdesignicons.com/)
 
@@ -39,18 +41,14 @@ For those designing new icons please use the templates provided as a starting po
 
 ### Third Party (Plugins / Extensions / etc)
 
-Please follow official releases and use the `mdi-svg` dependency for any third party integration. This ensures a stable release for your plugins or third party libraries/applications.
+Please follow official releases and use the `@mdi/svg` [NPM](https://www.npmjs.com/package/@mdi/svg) dependency for any third party integration. This ensures a stable release for your plugins or third party libraries/applications.
 
 [Templarian/MaterialDesign-SVG](https://github.com/templarian/materialdesign-svg)
 
 ```
-npm install mdi-svg
+npm install @mdi/svg
 bower install mdi-svg
 ```
-
-### Donations
-
-This project does not directly take donations. If you would like to support the project and get some more icons at the same time purchase [Material Design Icons Light](https://creativemarket.com/templarian/348441-Material-Design-Icons-Light?u=templarian).
 
 ## License
 
