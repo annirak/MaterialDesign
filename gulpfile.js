@@ -9,6 +9,7 @@ var icons = [
     'account',
     'account-alert',
     'account-card-details',
+    'account-convert',
     'account-box-outline',
     'account-circle',
     'account-multiple',
@@ -70,6 +71,7 @@ var icons = [
     'delete-forever',
     'desktop-classic',
     'details',
+    'directions',
     'document',
     'dots-vertical',
     'download',
@@ -81,7 +83,9 @@ var icons = [
     'file-chart',
     'file-check',
     'file-document-box',
+    'file-pdf-box',
     'filter-variant',
+    'finance',
     'folder-account',
     'format-list-bulleted',
     'gauge',
@@ -91,6 +95,7 @@ var icons = [
     'information-outline',
     'library',
     'link',
+    'loading',
     'lock',
     'logout',
     'magnify',
@@ -99,6 +104,7 @@ var icons = [
     'menu-down',
     'more',
     'note',
+    'note-plus',
     'open-in-new',
     'page-first',
     'page-last',
@@ -131,12 +137,14 @@ let appsDirIcons = [
     'account-switch',
     'alert',
     'alert-box',
+    'bio',
     'book',
     'book-multiple',
     'calendar',
     //'card-icon',
     'chart-line',
     'chart-timeline',
+    'chart-pie',
     'city',
     'clipboard-account',
     'clipboard-text',
@@ -204,13 +212,13 @@ gulp.task('svgstoreall', function() {
 gulp.task('svgstore', function() {
     var srcFiles = [];
 
-    // var dest =
-    //     'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
-    // icons.forEach(icon => srcFiles.push(iconSrc(icon)));
-
     var dest =
-        'C:/Users/kmireles.DS/Documents/visual studio 2015/Projects/AppsDir/AppsDir/images';
-    appsDirIcons.forEach(icon => srcFiles.push(iconSrc(icon)));
+        'C:/Users/kmireles.DS/Source/Repos/NYC.DEP.BrowserCIS/src/NYC.DEP.BrowserCIS.Web/wwwroot/images';
+    icons.forEach(icon => srcFiles.push(iconSrc(icon)));
+
+    // var dest =
+    //     'C:/Users/kmireles.DS/Documents/visual studio 2015/Projects/AppsDir/AppsDir/images';
+    // appsDirIcons.forEach(icon => srcFiles.push(iconSrc(icon)));
 
     return (
         gulp
